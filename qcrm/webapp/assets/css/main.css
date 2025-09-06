@@ -1,0 +1,62 @@
+/* Colors */
+:root{
+    --bg-dark: #030108;
+    --bg-light: #ededf5;
+}
+/* Global Class */
+.hide-onload,
+.d-hide {display: none;}
+.loading{
+    text-align: center;
+    min-width: 50px
+}
+.modal.action-sheet {
+    z-index: 200000;
+}
+.modal.dialogbox {
+    z-index: 200001;
+}
+
+/* Over Screen */
+#socket-reconnecting{
+    z-index: 999999;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(36, 6, 6, 0.68);
+    color: #fff;
+}
+#socket-reconnecting div {border-radius: 3px;}
+
+/* Register Form */
+#guest-register country-selector{
+    width: 100%;
+}
+/* Countries List */
+.countries-list.dropdown-menu {
+    max-height: 175px;
+    overflow-y: scroll;
+}
+.countries-list.dropdown-menu .dropdown-item{cursor: pointer;}
+.country-selector svg,
+.countries-list.dropdown-menu svg {width: 24px;margin-right: 5px;}
+
+/* Trade */
+.market-text-datetime {
+    font-size: 14px;
+    margin-top: 4px;
+}
+#trade-market #symbols-wrapper .symbol-row{border-bottom:4px Solid var(--bg-light);}
+body.dark-mode #trade-market #symbols-wrapper .symbol-row{border-color: var(--bg-dark);}
+
+#start-date {
+    border-radius: 10px 0 0 10px;
+}
+#end-date {
+    border-radius: 0 10px 10px 0;
+}

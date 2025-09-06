@@ -1,0 +1,52 @@
+{
+  "name": "Altin Yatirim",
+  "short_name": "AltinYatirim",
+  "start_url": "index.php",
+  "display": "standalone",
+  "scope": "https://portal.altinyatirim.com/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+      {
+          "src": "assets/img/icon/favicon-16x16.png",
+          "type": "image/png",
+          "sizes": "16x16",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "assets/img/icon/favicon-32x32.png",
+          "type": "image/png",
+          "sizes": "32x32",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "assets/img/icon/apple-touch-icon.png",
+          "type": "image/png",
+          "sizes": "180x180",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "assets/img/icon/android-chrome-192x192.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "purpose": "any maskable"
+      },
+      {
+          "src": "assets/img/icon/android-chrome-512x512.png",
+          "type": "image/png",
+          "sizes": "512x512",
+          "purpose": "any maskable"
+      }
+  ],
+  "description": "The App supports operations with different asset classes, including Forex and Futures.\nWith us, traders are equipped with convenient and powerful trading functionality. The flexible trading system, with Market Depth and support for all order types, enables traders to execute any trading strategy on any financial market.\n\nThe platform provides the netting system for trading exchange instruments and the hedging option for full-fledged Forex trading.",
+  "dir": "auto",
+  "lang": "en",
+  "categories": [
+    "finance"
+  ],
+  "display_override": [
+    "standalone",
+    "window-controls-overlay"
+  ]
+}

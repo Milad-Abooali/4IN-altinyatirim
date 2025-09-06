@@ -1,0 +1,22 @@
+.do-trade{
+    padding: 12px;
+}
+div:has(> .do-buy):hover {
+    color: #25d50a;
+    background-color:unset;
+}
+div:has(> .do-buy) {
+    color: #fff;
+    background-color: #25d50a;
+    border: 2px solid rgba(17, 255, 0, 0.53);
+}
+div:has(> .do-sell):hover {
+    color: #ea3739!important;
+    background-color:unset;
+}
+div:has(> .do-sell) {
+    color: #fff;
+    background-color: #ea3739;
+    border: 2px solid rgba(255, 0, 0, 0.47);
+}
+

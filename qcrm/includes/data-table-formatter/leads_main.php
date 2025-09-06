@@ -1,0 +1,31 @@
+<?php
+
+// lname(2) - Last Name, hide if agent
+function c_2 ($data, $row, $col) {
+    // return $data;
+    return ( in_array( $_SESSION['type'] ,['Admin', 'Manager']) )
+        ? $data
+        : mb_substr($data, 0,1, 'UTF-8').'~~~~';
+}
+
+
+// Status(9) - TP Logins (17)
+function c_8 ($data, $row, $col) {
+    $main = '<div>'.$data.'</div>';
+    $extra = null;
+    if ($col[17]) {
+        $extra.='<div class="data-hide login-hide"><small class="bg-gradient-dark text-white btn-sm col-md-12 col-sm-6 text-center">Logins</small><span><li class="cb-copy-html">'.str_replace(',','</li><li class="cb-copy-html">',$col[17]).'</li></span></div>';
+    }
+    return $main.$extra;
+}
+
+// Source
+function c_10 ($data, $row, $col) {
+    $main = '<div>'.$data.'</div>';
+    $camps = ($col[15] || $col[16])
+    ? '<div class="data-hide camp-hide"><small class="bg-gradient-dark text-white btn-sm col-md-12 col-sm-6 text-center">Campaigns</small><span><strong>Main:</strong><br> '.$col[15].'<br><strong>Extra:</strong><br>'.$col[16].'</span></div>'
+    : null;
+    $affiliate = ($col[18]) ? '<div>Affiliate:'.$col[18].'</div>' : '';
+    return $main.$camps.$affiliate;
+}
+
